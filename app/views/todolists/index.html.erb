@@ -1,0 +1,20 @@
+<h1 align="center">To Do List</h1>
+
+  <%= link_to "add item", new_todolist_path %>
+
+  <table>
+    <thead>
+      <tr>
+        <td>待辦事項</td>
+        <td></td>
+        <td>政見</td>
+        <td>得票數</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= todolists.item %></td>
+        <td><%= todolists.finaldate %></td>
+      </tr>
+    </tbody>
+  </table>
