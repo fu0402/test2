@@ -1,0 +1,13 @@
+<h1>新增待辦事項</h1>
+  <%= form_for(@todolist) do |f| %>
+    <%= f.label :item, "代辦事項" %>
+    <%= f.text_field :item %> <br />
+
+    <%= f.label :finaldate, "預完日" %>
+    <%= f.text_field :finaldate %> <br />
+
+    <%= f.submit %>
+  <% end %>
+
+  <br />
+  <%= link_to '回清單', todolists_path %>

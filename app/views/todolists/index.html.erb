@@ -6,15 +6,15 @@
     <thead>
       <tr>
         <td>待辦事項</td>
-        <td></td>
-        <td>政見</td>
-        <td>得票數</td>
+        <td>預完日</td>
       </tr>
     </thead>
     <tbody>
+      <% @todolists.each do |todolist| %>
       <tr>
         <td><%= todolists.item %></td>
         <td><%= todolists.finaldate %></td>
       </tr>
+      <% end%>
     </tbody>
   </table>
